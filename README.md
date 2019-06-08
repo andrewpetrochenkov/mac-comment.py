@@ -1,5 +1,6 @@
 <!--
 https://pypi.org/project/readme-generator/
+https://pypi.org/project/python-readme-generator/
 -->
 
 [![](https://img.shields.io/badge/OS-MacOS-blue.svg?longCache=True)]()
@@ -18,7 +19,7 @@ function|`__doc__`
 `mac_comment.read(path)` |return string with Finder comment
 `mac_comment.write(path, comment=None)` |write Finder comment
 
-#### CLI
+#### Executable modules
 usage|`__doc__`
 -|-
 `python -m comment path [comment]` |read/write Finder comment
@@ -38,5 +39,5 @@ CLI works too
 ```
 
 <p align="center">
-    <a href="https://pypi.org/project/readme-generator/">readme-generator</a>
+    <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
 </p>
