@@ -1,11 +1,11 @@
-#!/usr/bin/env python
+__all__ = ['read', 'write']
+
+
 import xattr
-import public
 
 kMDItemFinderComment = "kMDItemFinderComment"
 
 
-@public.add
 def read(path):
     """return string with Finder comment"""
     try:
@@ -15,7 +15,6 @@ def read(path):
         pass
 
 
-@public.add
 def write(path, comment=None):
     """write Finder comment"""
     if comment is None:
@@ -26,4 +25,3 @@ def write(path, comment=None):
         if comment is not None and hasattr(comment, "encode"):
             comment = comment.encode("utf-8")  # str/bytes required
         xattr.setxattr(path, kMDItemFinderComment, comment)
-
